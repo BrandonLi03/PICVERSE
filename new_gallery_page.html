@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./new_gallery_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+    <title>PICVERSE</title>
+</head>
+<body>
+    <nav>
+        <h1 class="navigation_logo">PICVERSE</h1>
+        <ul class="navigation_items" id="navigation_items">
+            <li class="navigation_item"><a href="new_home_page.html">Home</a></li>
+            <li class="navigation_item"><a href="new_gallery_page.html">Gallery</a></li>
+            <li class="navigation_item"><a href="new_community_page.html">Community</a></li>
+            <li class="navigation_item"><a href="new_submission_page.html">Submission</a></li>
+            <li class="navigation_item"><a href="new_about_us_page.html">About Us</a></li>
+        </ul>
+        <img src="./assets/Icon/More Icon.png" class="navigation_toggle_icon" onclick="toggleMenu()">
+    </nav>
+    <main>
+        <div class="tags_container">
+            <button class="tag">Realism</button>
+            <button class="tag">Impressionism</button>
+            <button class="tag">Surrealism</button>
+        </div>
+        <div class="gallery_container">
+            <div class="realism_container">
+                <h1 class="gallery_title">Realism</h1>
+                <div class="realism_gallery">
+                    <div class="artwork">
+                        <img src="./assets/Realism/Lepage - October.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"October"</h1>
+                            <p class="artist">Lepage</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Realism/William Bliss Baker - Summer Pasture.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Summer Pasture"</h1>
+                            <p class="artist">William Bliss Baker</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Realism/Poor Fauvette - Lepage.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"October"</h1>
+                            <p class="artist">Lepage</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Realism/William Bliss Baker - Fallen Monarchs.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Fallen Monarchs"</h1>
+                            <p class="artist">William Bliss Baker</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Realism/Haymaking - Lepage.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Haymaking"</h1>
+                            <p class="artist">Lepage</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Realism/William Bliss Baker - Hide and Seek.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Hide and Seek"</h1>
+                            <p class="artist">William Bliss Baker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="impressionism_container">
+                <h1 class="gallery_title">Impressionism</h1>
+                <div class="impressionism_gallery">
+                    <div class="artwork">
+                        <img src="./assets/Impressionism/Vincent van Gogh - Wheat Field with Cypresses.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Wheat Field with Cypresses"</h1>
+                            <p class="artist">Vincent van Gogh</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Impressionism/Edgar Degas - In a Cafe.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"In aCafe"</h1>
+                            <p class="artist">Edgar Degas</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Impressionism/Vincent van Gogh - The Church at Auvers.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"The Church at Auvers"</h1>
+                            <p class="artist">Vincent van Gogh</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Impressionism/Edgar Degas - Before the Race.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Before The Race"</h1>
+                            <p class="artist">Edgar Degas</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img
+                            src="./assets/Impressionism/Vincent van Gogh - The Potato Eaters.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"The Potato Eaters"</h1>
+                            <p class="artist">Vincent van Gogh</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Impressionism/Edgar Degas - The Ballet Class.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"The Ballet Class"</h1>
+                            <p class="artist">Edgar Degas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="surrealism_container">
+                <h1 class="gallery_title">Surrealism</h1>
+                <div class="surrealism_gallery">
+                    <div class="artwork">
+                        <img src="./assets/Surrealism/Pablo Picasso - A Hat with Flowers.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"A Hat with Flowers"</h1>
+                            <p class="artist">Pablo Picasso</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Surrealism/Salvador Dali - Battle in the Clouds.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Battle in the Clouds"</h1>
+                            <p class="artist">Pablo Picasso</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Surrealism/Pablo Picasso - Potrait of Dora Maar.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Potrait of Dora Maar"</h1>
+                            <p class="artist">Salvador Dali</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Surrealism/Salvador Dali - Dali Combat.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"Dali Combat"</h1>
+                            <p class="artist">Salvador Dali</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Surrealism/Pablo Picasso - The Three Dancers.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"The Three Dancers"</h1>
+                            <p class="artist">Pablo Picasso</p>
+                        </div>
+                    </div>
+                    <div class="artwork">
+                        <img src="./assets/Surrealism/Salvador Dali - The Persistence of Memory.jpg">
+                        <div class="artwork_description">
+                            <h1 class="title">"The Persistence of Memory"</h1>
+                            <p class="artist">Salvador Dali</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./navigation_bar.js"></script>
+</html>

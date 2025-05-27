@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./new_submission_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+    <title>PICVERSE</title>
+</head>
+<body>
+    <nav>
+        <h1 class="navigation_logo">PICVERSE</h1>
+        <ul class="navigation_items" id="navigation_items">
+            <li class="navigation_item"><a href="new_home_page.html">Home</a></li>
+            <li class="navigation_item"><a href="new_gallery_page.html">Gallery</a></li>
+            <li class="navigation_item"><a href="new_community_page.html">Community</a></li>
+            <li class="navigation_item"><a href="new_submission_page.html">Submission</a></li>
+            <li class="navigation_item"><a href="new_about_us_page.html">About Us</a></li>
+        </ul>
+        <img src="./assets/Icon/More Icon.png" class="navigation_toggle_icon" onclick="toggleMenu()">
+    </nav>
+    <main>
+        <div class="decoration_container">
+            <img class="decoration" src="./assets/Slideshow/Decoration.jpg">
+            <h1 class="decoration_title">Submit Your Creativity</h1>
+        </div>
+        <div class="form_container" id="form_container">
+            <div class="file">
+                <input type="file" id="file" name="file">
+            </div>
+            <div class="email">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="title">
+                <label for="title">Title :</label>
+                <input type="text" id="title" name="title" placeholder="Enter your title">
+            </div>
+            <div class="description">
+                <label for="description">Description :</label>
+                <input type="text" id="description" name="description" placeholder="Enter your description">
+            </div>
+            <div class="tags">
+                <div class="impressionism">
+                    <input type="checkbox" id="impressionism">
+                    <label for="impressionism">Impressionism</label>
+                </div>
+                <div class="surrealism">
+                    <input type="checkbox" id="surrealism">
+                    <label for="surrealism">Surrealism</label>
+                </div>
+                <div class="realism">
+                    <input type="checkbox" id="realism">
+                    <label for="realism">Realism</label>
+                </div>
+                <div class="digital_art">
+                    <input type="checkbox" id="digital_art">
+                    <label for="digital_art">Digital Art</label>
+                </div>
+                <div class="pixel_art">
+                    <input type="checkbox" id="pixel_art">
+                    <label for="pixel_art">Pixel Art</label>
+                </div>
+                <div class="line_art">
+                    <input type="checkbox" id="line_art">
+                    <label for="line_art">Line Art</label>
+                </div>
+            </div>
+            <div class="AI_generated">
+                <p>Is this artwork AI generated?</p>
+                <input type="radio" id="yes">
+                <label for="yes">yes</label>
+                <input type="radio" id="no">
+                <label for="no">no</label>
+            </div>
+            <button class="submit_button" onclick="validateForm()">Submit</button>
+        </div>
+    </main>
+</body>
+<script src="./new_submission_page.js"></script>
+<script src="./navigation_bar.js"></script>
+</html>

@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Serif', serif;
+}
+
+body {
+    background-color: #F2E9E4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    height: 65px;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-bottom: black 2px solid;
+    overflow: visible;
+}
+
+.navigation_logo {
+    font-size: 30px;
+    color: black;
+}
+
+.navigation_items {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.navigation_items a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.navigation_items a:hover {
+    border: black 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.navigation_toggle_icon {
+    display: none;
+}
+
+.about_us_container {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+}
+
+.about_us_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_us_container p {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    color: #F2E9E4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.quote_container{
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.mission_vision_container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.mission_container{
+    width: 50%;
+    background-color: #504B38;
+    color: #F2E9E4;
+    align-content: center;
+    padding: 0 50px;
+    text-align: center;
+    overflow: hidden
+}
+
+.vision_container{
+    width: 50%;
+    background-color: #B9B28A;
+    color: #F2E9E4;
+    align-content: center;
+    padding: 0 50px;
+    text-align: center;
+    overflow: hidden
+}
+
+.title{
+    font-size: 45px;
+}
+
+.description{
+    font-size: 20px;
+}
+
+.key_feature_container{
+    width: 100%;
+    height: fit-content;
+    color: black;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.key_feature_items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.key_feature_item{
+    width: 250px;
+    height: 270px;
+    background-color: #504B38;
+    text-align: center;
+    align-content: center;
+    color: #F2E9E4;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.3s ease;
+}
+
+.key_feature_item:hover{
+    transform: translateY(-10px);
+}
+
+.feature_bar_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin-top: 30px;
+    color: #F2E9E4;
+    gap: 20px;
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.feature_items {
+    display: flex;
+    gap: 20px;
+}
+
+.feature_item {
+    width: 200px;
+}
+
+.feature_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feature_description {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .navigation_toggle_icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation_items {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: black;
+        gap: 0;box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        overflow: hidden;
+    }
+
+    .navigation_items a {
+        color: #F2E9E4;
+    }
+
+    .navigation_items a:hover {
+        border: #F2E9E4 1px solid;
+    }
+
+    .navigation_item {
+        padding: 30px;
+    }
+
+    .navigation_toggle_icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .about_us_container p{
+        font-size: 20px;
+    }
+
+    .quote_container{
+        font-size: 16px;
+    }
+
+    .mission_vision_container{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .mission_container, .vision_container {
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+
+    .key_feature_item h1{
+        font-size: 30px;
+    }
+
+    .key_feature_item p{
+        font-size: 15px;
+    }
+
+    .feature_bar_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature_items{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .feature_description{
+        display: none;
+    }
+}
