@@ -33,7 +33,12 @@ function validate(){
         return false;
     }
     else if(!yes && !no){
-        alert("Please indicate whether you would like to receive updates.");
+        alert("Please indicate whether this art is AI generated.");
         return false;
+    }
+    else{
+        alert("Thank you for your submission!");
+        document.getElementById("form_container").reset();
+        return true;
     }
 }
