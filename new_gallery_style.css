@@ -204,6 +204,75 @@ nav {
         font-style: italic;
 }
 
+.preview_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.preview_container.show{
+    pointer-events: auto;
+    opacity: 1; 
+}
+
+.preview{
+    display: flex;
+    padding: 50px 30px;
+    background: #F8F3D9;
+    position: relative;
+    margin: 0 50px;
+    width: fit-content;
+    gap: 20px;
+    align-items: center;
+}
+
+.preview img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.preview_title{
+    font-size: 40px;
+}
+
+.preview_artist{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.preview_story{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.preview_tag{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
 @media (max-width: 768px) {
     .navigation_toggle_icon {
         display: block;
