@@ -182,6 +182,12 @@ nav {
     cursor: pointer;
 }
 
+.submit_button:hover {
+    background-color: transparent;
+    border: black 2px solid;
+    color: black;
+}
+
 @media (max-width: 768px) {
     .navigation_toggle_icon {
         display: block;
